@@ -25,7 +25,7 @@ public class kudu_test {
     @Before
     public void init() {
     //ָ��master��ַ
-        String masterAddress = "106.75.86.67,106.75.79.252,106.75.6.131";
+        String masterAddress = "nari-test01,nari-test02,nari-test03,nari-test04,nari-test05";
     //����kudu�����ݿ�����
         kuduClient = new KuduClient.KuduClientBuilder(masterAddress).defaultSocketReadTimeoutMs(6000).build();
     }
